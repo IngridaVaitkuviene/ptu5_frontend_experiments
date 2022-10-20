@@ -8,6 +8,10 @@
         <h1>Žmonės</h1>
         <h3>Gerų studentų sąrašas</h3>
         <hr>
-        <p>{{ zmones }}</p>
+        <ol>
+        {% for zmogus in zmones %}
+            <li>{{ zmogus }}</li>
+        {% endfor %}
+        </ol>
     </body>
 </html>
