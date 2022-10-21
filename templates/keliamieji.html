@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keliamieji metai</title>
+</head>
+<body>
+    <h1>KELIAMIEJI METAI</h1>
+    <hr>
+    <p>Keliamieji metai nuo 1900 iki 2100 metų:</p>
+    <ol>    
+    {% for metai in keliamieji %}
+        <li>{{ metai }}</li>
+    {% endfor %}
+    </ol>
+</body>
+</html>
