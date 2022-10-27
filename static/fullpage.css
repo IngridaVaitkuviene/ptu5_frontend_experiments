@@ -1,0 +1,92 @@
+body {
+    display: grid;
+    grid-template-rows: 3rem auto 10rem;
+    /* grid-template-columns: auto 20%; */
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #eee;
+    display: grid;
+    place-items: stretch center;
+    /* grid-column: span 2; */
+
+}
+
+footer {
+    background-color: #ccc;
+    display: grid;
+    place-items: stretch center;
+    /* grid-column: span 2;    */
+}
+
+main {
+    background-image: url('/static/earth.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    place-items: stretch center;
+    color: white;
+    display: grid;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90vw;
+}
+
+header .container {
+    display: grid;
+    place-items: center start;
+    grid-template-columns: repeat(6, auto);
+}
+
+header .logo {
+    max-height: 3rem;
+}
+
+header a {
+    color: #fec;
+    padding: 0.75rem;
+    font-size: 120%;
+    text-decoration: none;
+}
+ /* dvitaskis nurodo state */
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    max-height: 3rem;
+}
+main .container {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: grid;
+    grid-template-columns: auto 20%;
+    place-items: stretch stretch;
+}
+
+.sidebar {
+    background-color: rgba(255, 168, 255, 0.2);
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.content h1, h2 {
+    text-align: center;
+    border-bottom: 4px solid #000;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.content p {
+    padding: 0 1rem;
+}
+
+footer img {
+    max-width: 3rem;
+}
