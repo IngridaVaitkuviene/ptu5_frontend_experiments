@@ -1,0 +1,45 @@
+.body {
+    background-color: lightgray;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+    gap: 0.2rem 0.5rem;
+    margin-top: 0.5rem;
+}
+.cont-3 {
+    grid-template-columns: 2fr 3fr 2fr;
+    /* grid-template-columns: repeat(3, calc(100% / 3 - 0.5rem * 2 / 3)); */
+    /* grid-template-columns: calc(30% - 0.5rem * 2 / 3) calc(40% - 0.5rem * 2 / 3) calc(30% - 0.5rem * 2 / 3); */
+}
+.cont-4 {
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-columns: calc(30% - 0.5rem * 3 / 4) auto auto calc(20% - 0.5rem * 3 / 4); */
+    /* grid-template-columns: calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4); */
+}
+.cont-5 {
+    grid-template-columns: repeat(3, auto);
+}
+.item {
+    background-color: darkgray;
+    padding: 0.2rem;
+    color: darkslategray;
+}
+.col-double {
+    grid-column: span 2;
+}
+.row-double {
+    grid-row: span 2;
+}
+.menu {
+    grid-column: span 3;
+}
+.footer {
+    grid-column: span 4;
+}
+/* span items */
+/* span columns */
