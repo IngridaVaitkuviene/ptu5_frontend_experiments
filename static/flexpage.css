@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    /* is virsaus i apacia tas direction column reiskia */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    height: 5rem;
+    position: fixed;
+    width: 100vw;
+    height: 4rem
+}
+
+main {
+    background-image: url('/static/sunset.jpg');
+    background-size: cover;
+    background-position: center center;
+    flex-grow: 1;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* cia yra section'o meinas, bet ne sectiono viduje kazkurio elemento main'as, tada butu su tarpu */
+section.main {
+    /* flex-grow: 1; */
+}
+
+section {
+    display: flex;
+    flex-direction:  column;
+    align-items: flex-start;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 1200px;
+    max-width: 70vw;
+    margin-left: 2rem;
+}
+/* !important duoda prioriteta */
+.transparent {
+    background: transparent!important;
+}
+
+.things {
+    background-color: rgba(255, 168, 168, 0.5);
+}
+
+.thing-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.thing img {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.thing h3 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+/* jei tik du skaiciai, tai virusus ir sonai, jei visus 4 nurodysim, top, bottom, sides*/
+p {
+    padding: 0 0.5rem;
+}
+
+footer {
+    min-height: 5rem;
+    background-color: #666;
+    color: #fee;
+    display: flex;
+    align-items: center;
+}
+
+footer .container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

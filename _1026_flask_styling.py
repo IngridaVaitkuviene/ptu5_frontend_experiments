@@ -22,7 +22,11 @@ def fullpage():
 # kaip gridas, tik jis turi daugiau nukrypimu, nera tinkleliu, dydis nepriklauso nuo elemento dydziu
 @app.route("/flex")
 def flex():
-    return render_template("styling/flex.html")  
+    return render_template("styling/flex.html")
+
+@app.route("/flexpage")
+def flexpage():
+    return render_template("styling/flexpage.html")
 
 if __name__=="__main__":
     app.run(debug=True)
